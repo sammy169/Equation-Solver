@@ -1,0 +1,12 @@
+1. Quadratic Equation:
+    - Import Math library  
+    - ax^2 + bx + c = 0
+    - Input A, B, and C from the user
+    - plug it into the Equation
+    - Turn that equation into the quadratic formula
+     -b ± √(b^2 - 4ac)
+    --------------------
+            2a
+    -
+    Solve it using math library in python
+    -Return to user 
