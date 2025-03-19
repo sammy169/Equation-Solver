@@ -24,4 +24,7 @@ def solver(a, b, c):
 
 x1, x2 = solver(a,b,c)
 
-print(f'First solution is {round(x1,3)} and the second one is {round(x2,3)}')
+if x1 == x2:
+    print(f'The solution is {round(x1,3)}.')
+else:
+    print(f'First solution is {round(x1,3)} and the second one is {round(x2,3)}')
