@@ -21,4 +21,4 @@ def solver(a, b, c):
 
 x1, x2 = solver(a,b,c)
 
-print(f'First solution is {x1} and the second one is {x2}')
+print(f'First solution is {round(x1,3)} and the second one is {round(x2,3)}')
