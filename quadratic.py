@@ -1,6 +1,5 @@
 import math
 import cmath
-import sys
 
 # Takes input a,b,c which are the coefficionts of quadriatic equations
 #then uses the quadratic formula to compute the result and returns it to the user
