@@ -1,4 +1,5 @@
 import math
+import cmath
 import sys
 
 a = float(input("Enter your A value:"))
@@ -12,12 +13,11 @@ c = float(input("Enter your C value:"))
 def solver(a, b, c):
     p = b*b - 4*a*c
     if p < 0:
-        print('There are no real solutions')
-        sys.exit(-1)
-    
-    
-    x1 = ((b*-1) + math.sqrt(p))/(2*a)
-    x2 = ((b*-1) - math.sqrt(p))/(2*a)
+        x1 = ((b*-1) + cmath.sqrt(p))/(2*a)
+        x2 = ((b*-1) - cmath.sqrt(p))/(2*a)
+    else:
+        x1 = ((b*-1) + math.sqrt(p))/(2*a)
+        x2 = ((b*-1) - math.sqrt(p))/(2*a)
 
     return x1, x2
 
@@ -25,6 +25,6 @@ def solver(a, b, c):
 x1, x2 = solver(a,b,c)
 
 if x1 == x2:
-    print(f'The solution is {round(x1,3)}.')
+    print(f'The solution is {x1}.')
 else:
-    print(f'First solution is {round(x1,3)} and the second one is {round(x2,3)}')
+    print(f'First solution is {x1} and the second one is {x2}')
