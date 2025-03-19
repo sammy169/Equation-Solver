@@ -1,4 +1,5 @@
 import math
+import sys
 
 a = float(input("Enter your A value:"))
 b = float(input("Enter your B value:"))
@@ -12,6 +13,7 @@ def solver(a, b, c):
     p = b*b - 4*a*c
     if p < 0:
         print('This number is not real')
+        sys.exit(-1)
     
     x1 = ((b*-1) + math.sqrt(p))/(2*a)
     x2 = ((b*-1) - math.sqrt(p))/(2*a)
