@@ -12,8 +12,9 @@ c = float(input("Enter your C value:"))
 def solver(a, b, c):
     p = b*b - 4*a*c
     if p < 0:
-        print('This number is not real')
+        print('There are no real solutions')
         sys.exit(-1)
+    
     
     x1 = ((b*-1) + math.sqrt(p))/(2*a)
     x2 = ((b*-1) - math.sqrt(p))/(2*a)
